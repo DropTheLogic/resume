@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="Desription" content="Udacity JavaScript Basics">
+  <meta name="Author" content="Daniel Márquez">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>Daniel Márquez - Resume</title>
+
+  <!-- Load the page styles. -->
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+
+  <!-- Google Map -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body class="gradient-pattern">
+  <div id="main" class="container add-shadow">
+
+    <!-- Header -->
+    <div id="header" class="row">
+      <ul id="topContacts" class="flex-box"></ul>
+      <div id="sub-header" class="row"></div>
+    </div>
+
+    <!-- Nav Tabs -->
+    <div id="tabs">
+    	<ul class="nav nav-tabs colored">
+    		<li class="active"><a href="#workExperience" id="tab-experience" data-toggle="tab">Experience</a>
+    		</li>
+    		<li><a href="#projects" id="tab-projects" data-toggle="tab">Projects</a>
+    		</li>
+    		<li><a href="#education" id="tab-education" data-toggle="tab">Education</a>
+    		</li>
+    		<li><a href="#mapDiv" id="tab-map" data-toggle="tab">Locations</a>
+    		</li>
+    	</ul>
+    </div>
+
+    <!-- Sections -->
+    <div id="content-sections" class="tab-content clearfix">
+      <div id="workExperience" class="tab-pane fade in active trans-gradient">
+        <h2>Work Experience</h2>
+        <hr class="skinny-line" />
+      </div>
+      <div id="projects" class="tab-pane fade trans-gradient">
+        <h2>Projects</h2>
+        <hr class="skinny-line" />
+      </div>
+      <div id="education" class="tab-pane fade trans-gradient">
+        <h2>Education</h2>
+        <hr class="skinny-line" />
+      </div>
+      <div id="mapDiv" class="tab-pane fade trans-gradient">
+        <h2>Where I've Lived and Worked</h2>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="lets-connect" class="row gradient">
+      <h3 class="footer-bar">Let's Connect</h3>
+        <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </div>
+
+  <!-- Let's build the page with javascript! -->
+  <script src="js/resumeBuilder.js"></script>
+
+  <script type="text/javascript">
+
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      //document.getElementById('topContacts').style.display = 'none';
+      document.getElementById('topContacts').style.background = '#000';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      //document.getElementById('header').style.display = 'none';
+      document.getElementById('header').style.background = '#000';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      //document.getElementById('workExperience').style.display = 'none';
+      document.getElementById('workExperience').style.background = '#000';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      //document.getElementById('projects').style.display = 'none';
+      document.getElementById('projects').style.background = '#000';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      //document.getElementById('education').style.display = 'none';
+      document.getElementById('education').style.background = '#000';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      //document.getElementById('lets-connect').style.display = 'none';
+      document.getElementById('lets-connect').style.background = '#000';
+    }
+    if(document.getElementById('map') === null) {
+      //document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('mapDiv').style.background = '#000';
+    }
+  </script>
+  
+</body>
+</html>
