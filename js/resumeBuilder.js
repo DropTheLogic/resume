@@ -1,15 +1,15 @@
 var bio = {
-	"name" : "Daniel Márquez",
-	"role" : "Web Developer",
+	"name" : "Danny Márquez",
+	"role" : "",
 	"contacts" : {
 		"mobile" : "(917) 399-5264",
-		"email" : "DropTheLogic@gmail.com",
+		"email" : "DannyBrianMarquez@gmail.com",
 		"github" : "DropTheLogic",
 		"twitter" : "@DropTheLogic",
 		"location" : "Washington Heights, New York City"
 	},
 	"biopic" : "images/pic.jpg",
-	"welcomeMessage" : "I'm looking for an entryway into a career of front-end web development where I can draw on my life skills and my technical skills in a team-oriented environment",
+	"welcomeMessage" : "I'm looking for an entryway into a tech career where I can draw on my life skills and my technical skills in a team-oriented environment",
 	"skills" : [
 		"Management", "Photoshop", "Graphic Design", "HTML/CSS", "JavaScript"
 	]
@@ -34,7 +34,12 @@ var work = {
 			"employer" : "Nick's Family-Style Restaurant and Pizzeria",
 			"dates" : "2003-current",
 			"location" : "1814 2nd Ave, New York City",
-			"description" : "Oversee and manage mid-sized restaurant and staff of over 25 workers",
+			"description" : [
+				"Oversee and manage mid-sized restaurant and staff of over 20 workers",
+				"Responsible for inventory and ordering of all restaurant dry-goods, food and alcohol",
+				"Coordinate, staff and retain crews of prep workers, cooks and servers",
+				"Create brand loyalty and provide customer service for strong repeat business"
+				],
 			"url" : "http://www.nicksnyc.com"
 		},
 		{
@@ -42,7 +47,11 @@ var work = {
 			"employer" : "Freelance",
 			"dates" : "2001-current",
 			"location" : "262 Meserole St, Brooklyn, NY",
-			"description" : "Design and maintain websites and/or promotional material for artists and musicians",
+			"description" : [
+				"Design and maintain websites and/or promotional material for artists and musicians",
+				"Work with clients to find theme and feel for their visual representation",
+				"Develop and maintain web sites for clients"
+				],
 			"url" : "http://www.danny-marquez.com/portfolio/"
 		},
 		{
@@ -50,7 +59,12 @@ var work = {
 			"employer" : "Foul Magazine",
 			"dates" : "2001-2002",
 			"location" : "12 St Marks Place, New York City",
-			"description" : "Designed, laid-out and prepared all elements for a video-game/lifestyle print magazine",
+			"description" : [
+				"Designed, laid-out and prepared all elements for a video-game/lifestyle print magazine",
+				"Coordinated with staff to prepare design, art, editorial and advertising for print",
+				"Worked under tight deadlines to push issues out on-time",
+				"Delegated and managed art and design to subordinates as needed"
+				],
 			"url" : "http://www.villagevoice.com/best-of/2008/arts-and-entertainment/best-video-game-magazine-6445513"
 		}
 	]
@@ -63,7 +77,7 @@ var education = {
 			"dates" : "1997-2001",
 			"location" : "1 Washington Place, New York City",
 			"degree" : "Bachelor of Arts",
-			"majors" : ["Individualized Study Concentration: Technology in the Arts"],
+			"majors" : ["Individualized Study with Concentration: Technology in the Arts"],
 			"url" : "http://gallatin.nyu.edu/"
 		}
 	],
@@ -92,7 +106,7 @@ bio.display = function() {
 	var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
 	var formattedMsg = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
 
-	$('#topContacts').append(formattedMobile, formattedEmail, formattedTwitter, formattedGithub);
+	$('#topContacts').append(formattedMobile, formattedEmail, formattedTwitter /*formattedGithub*/);
 	$('#sub-header').append(formattedBioPic, formattedMsg);
 
 	// Skills
@@ -118,8 +132,11 @@ work.display = function() {
 			var formattedEmployerTitle = formattedEmployer + formattedTitle;
 			var formattedLocation = HTMLworkLocation.replace('%data%', job.location);
 			var formattedDates = HTMLworkDates.replace('%data%', job.dates);
-			var formattedWorkDescription = HTMLworkDescription.replace('%data%', job.description);
-			$('.work-entry:last').append(formattedEmployerTitle, formattedDates, formattedLocation, formattedWorkDescription);
+			$('.work-entry:last').append(formattedEmployerTitle, formattedDates, formattedLocation);
+			for (var i = 0; i < job.description.length; i++) {
+				var formattedWorkDescription = HTMLworkDescription.replace('%data%', job.description[i]);
+				$('.work-entry:last').append(formattedWorkDescription);
+			}
 		});
 	}
 };
@@ -177,7 +194,7 @@ bio.displayFooter = function() {
 	var formattedEmail = HTMLfooterEmail.replace(/%data%/g, bio.contacts.email);
 	var formattedTwitter= HTMLfooterTwitter.replace(/%data%/g, bio.contacts.twitter);
 	var formattedGithub = HTMLfooterGithub.replace(/%data%/g, bio.contacts.github);
-	$('#footerContacts').append(formattedMobile, formattedEmail, formattedTwitter, formattedGithub);
+	$('#footerContacts').append(formattedMobile, formattedEmail, formattedTwitter /*formattedGithub*/);
 };
 bio.displayFooter();
 

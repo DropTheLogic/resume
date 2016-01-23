@@ -308,6 +308,12 @@ Section Styling
   float: right;
 }
 
+.work-entry > li  {
+  padding: 3px 6px;
+  font-size: 12px;
+  color: #343433;
+}
+
 #map {
   display: block;
   height: 90%;
@@ -431,6 +437,10 @@ Responsive
     padding: 10px;
     font-size: 12px;
     font-weight: 700;
+  }
+
+  .work-entry > li  {
+    font-size: 14px;
   }
 
   #skills-h3 {
