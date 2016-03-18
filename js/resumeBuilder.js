@@ -38,19 +38,6 @@ var projects = {
 var work = {
 	"jobs" : [
 		{
-			"title" : "Manager",
-			"employer" : "Nick's Family-Style Restaurant and Pizzeria",
-			"dates" : "2003-current",
-			"location" : "1814 2nd Ave, New York City",
-			"description" : [
-				"Oversee and manage mid-sized restaurant and staff of over 20 workers",
-				"Responsible for inventory and ordering of all restaurant dry-goods, food and alcohol",
-				"Coordinate, staff and retain crews of prep workers, cooks and servers",
-				"Create brand loyalty and provide customer service for strong repeat business"
-				],
-			"url" : "http://www.nicksnyc.com"
-		},
-		{
 			"title" : "Graphic/Web Designer",
 			"employer" : "Freelance",
 			"dates" : "2001-current",
@@ -61,6 +48,19 @@ var work = {
 				"Develop and maintain web sites for clients"
 				],
 			"url" : "http://www.danny-marquez.com/portfolio/"
+		},
+		{
+			"title" : "Manager",
+			"employer" : "Nick's Family-Style Restaurant and Pizzeria",
+			"dates" : "2003-2016",
+			"location" : "1814 2nd Ave, New York City",
+			"description" : [
+				"Oversaw and managed mid-sized restaurant and staff of over 20 workers",
+				"Responsible for inventory and ordering of all restaurant dry-goods, food and alcohol",
+				"Coordinated, staffed and retained crews of prep workers, cooks and servers",
+				"Created brand loyalty and provided customer service for strong repeat business"
+				],
+			"url" : "http://www.nicksnyc.com"
 		},
 		{
 			"title" : "Art Director",
