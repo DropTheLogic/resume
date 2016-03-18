@@ -20,9 +20,16 @@ var projects = {
 		{
 			"title" : "Portfolio",
 			"dates" : "2015",
-			"description" : "Designed one-page portfolio website",
+			"description" : "Designed one-page, responsive portfolio website",
 			"images" : "images/danny-marquez-portfolio-screen.png",
 			"url" : "http://danny-marquez.com/portfolio/"
+		},
+		{
+			"title" : "JavaScript Game",
+			"dates" : "2016",
+			"description" : "Wrote object-oriented app in JavaScript",
+			"images" : "images/danny-marquez-game-screen.png",
+			"url" : "http://danny-marquez.com/BugRun/"
 		}
 	]
 };
@@ -166,7 +173,7 @@ education.display = function() {
 		education.schools.forEach(function(school) {
 			$('#education').append(HTMLschoolStart);
 			var formattedName = HTMLschoolName.replace('%data%', school.name).replace('%url%', school.url);
-			var formattedDates = HTMLschoolDates.replace('%data%', school.dates);			
+			var formattedDates = HTMLschoolDates.replace('%data%', school.dates);
 			var formattedDegree = HTMLschoolDegree.replace('%data%', school.degree);
 			var formattedLocation = HTMLschoolLocation.replace('%data%', school.location);
 			var formattedMajor = HTMLschoolMajor.replace('%data%', school.majors);

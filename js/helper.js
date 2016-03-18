@@ -26,7 +26,7 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<li class="flex-item">* %data%</li>';
 
-var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectStart = '<div class="flex-item project-entry"></div>';
 var HTMLprojectTitle = '<a href="%url%" target="blank">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
@@ -126,7 +126,7 @@ function initializeMap() {
 
     // adds the single location property from bio to the locations object array
     locations.push({
-      location: bio.contacts.location, 
+      location: bio.contacts.location,
       description: 'Home'
     });
 
@@ -199,7 +199,7 @@ function initializeMap() {
       // Then make new window
       gInfoWindow = new google.maps.InfoWindow({
         content: '<h3>' + getDescription(locations, name) + '</h3>' +
-          '<hr /><div>' + name + '<div>' 
+          '<hr /><div>' + name + '<div>'
       });
       gInfoWindow.open(map, marker);
     });

@@ -289,9 +289,14 @@ Section Styling
   padding: 0 5%;
 }
 
+.project-entry {
+  width: 100%;
+}
+
 .project-entry img {
-  max-width: 30%;
-  padding: 5px 0px;
+  max-width: 360px;
+  width: 100%;
+  padding: 5px 0px 10px 0px;
 }
 
 .date-text {
@@ -458,6 +463,14 @@ Responsive
 
   .strong-text, .accent-text {
     font-size: 14px;
+  }
+
+  .project-entry {
+    width: 50%;
+  }
+
+  .project-entry p {
+    min-height: 65px;
   }
 }
 
