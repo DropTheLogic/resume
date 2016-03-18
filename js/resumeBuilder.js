@@ -6,6 +6,7 @@ var bio = {
 		"email" : "DannyBrianMarquez@gmail.com",
 		"github" : "DropTheLogic",
 		"twitter" : "@DropTheLogic",
+		"linkedin" : "DannyMarquez",
 		"location" : "Washington Heights, New York City"
 	},
 	"biopic" : "images/pic.jpg",
@@ -111,9 +112,10 @@ bio.display = function() {
 	var formattedEmail = HTMLemail.replace(/%data%/g, bio.contacts.email);
 	var formattedTwitter= HTMLtwitter.replace(/%data%/g, bio.contacts.twitter);
 	var formattedGithub = HTMLgithub.replace(/%data%/g, bio.contacts.github);
+	var formattedLinkedIn = HTMLlinkedIn.replace(/%data%/g, bio.contacts.linkedin);
 	var formattedMsg = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
 
-	$('#topContacts').append(formattedMobile, formattedEmail, formattedTwitter /*formattedGithub*/);
+	$('#topContacts').append(formattedMobile, formattedEmail, formattedTwitter, formattedLinkedIn, formattedGithub);
 	$('#sub-header').append(formattedBioPic, formattedMsg);
 
 	// Skills
@@ -199,9 +201,10 @@ bio.displayFooter = function() {
 	'use strict';
 	var formattedMobile = HTMLfooterMobile.replace('%data%', bio.contacts.mobile);
 	var formattedEmail = HTMLfooterEmail.replace(/%data%/g, bio.contacts.email);
-	var formattedTwitter= HTMLfooterTwitter.replace(/%data%/g, bio.contacts.twitter);
+	var formattedTwitter = HTMLfooterTwitter.replace(/%data%/g, bio.contacts.twitter);
+	var formattedLinkedIn = HTMLfooterLinkedIn.replace(/%data%/g, bio.contacts.linkedin);
 	var formattedGithub = HTMLfooterGithub.replace(/%data%/g, bio.contacts.github);
-	$('#footerContacts').append(formattedMobile, formattedEmail, formattedTwitter /*formattedGithub*/);
+	$('#footerContacts').append(formattedMobile, formattedEmail, formattedTwitter, formattedLinkedIn, formattedGithub);
 };
 bio.displayFooter();
 

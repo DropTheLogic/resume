@@ -10,6 +10,7 @@ var HTMLmobile = '<li class="flex-item"><span class="accent-text">mobile</span><
 var HTMLemail = '<li class="flex-item"><span class="accent-text">email</span><span class="strong-text"><a href=mailto:%data%>%data%</a></span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="accent-text">twitter</span><span class="strong-text"><a href="https://www.twitter.com/%data%/" target="blank">%data%</a></span></li>';
 var HTMLgithub = '<li class="flex-item"><span class="accent-text">github</span><span class="strong-text"><a href="https://www.github.com/%data%/" target="blank">%data%</a></span></li>';
+var HTMLlinkedIn = '<li class="flex-item"><span class="accent-text">linkedin</span><span class="strong-text"><a href="https://www.linkedin.com/in/%data%/" target="blank">%data%</a></span></li>';
 var HTMLblog = '<li class="flex-item"><span class="accent-text">blog</span><span class="strong-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="accent-text">location</span><span class="strong-text">%data%</span></li>';
 
@@ -53,6 +54,7 @@ var HTMLfooterContactGeneric = '<li class="flex-item"><span>%contact%</span><spa
 var HTMLfooterMobile = '<li class="flex-item"><span>mobile</span><span class="foot-contact">%data%</span></li>';
 var HTMLfooterEmail = '<li class="flex-item"><span>email</span><span class="foot-contact"><a href=mailto:%data%>%data%</a></span></li>';
 var HTMLfooterTwitter = '<li class="flex-item"><span>twitter</span><span class="foot-contact"><a href="https://www.twitter.com/%data%/" target="blank">%data%</a></span></li>';
+var HTMLfooterLinkedIn = '<li class="flex-item"><span>linkedin</span><span class="foot-contact"><a href="https://www.linkedin.com/in/%data%/" target="blank">%data%</a></span></li>';
 var HTMLfooterGithub = '<li class="flex-item"><span>github</span><span class="foot-contact"><a href="https://www.github.com/%data%/" target="blank">%data%</a></span></li>';
 var HTMLfooterBlog = '<li class="flex-item"><span>blog</span><span class="foot-contact">%data%</span></li>';
 
