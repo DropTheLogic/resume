@@ -63,7 +63,7 @@ The International Name challenge in Lesson 2 where you'll create a function that
 */
 $(document).ready(function() {
   $('button').click(function() {
-    var iName = inName() || function(){};
+    var iName = controller.makeInName() || function(){};
     $('#name').html(iName);
   });
 });
@@ -128,25 +128,25 @@ function initializeMap() {
 
     // adds the single location property from bio to the locations object array
     locations.push({
-      location: bio.contacts.location,
+      location: model.bio.contacts.location,
       description: 'Home'
     });
 
     // iterates through school locations and appends each location to
     // the locations object array
-    for (var school in education.schools) {
+    for (var school in model.education.schools) {
       locations.push({
-        location: education.schools[school].location,
-        description: education.schools[school].name
+        location: model.education.schools[school].location,
+        description: model.education.schools[school].name
       });
     }
 
     // iterates through work locations and appends each location to
     // the locations object array
-    for (var job in work.jobs) {
+    for (var job in model.work.jobs) {
       locations.push({
-        location: work.jobs[job].location,
-        description: work.jobs[job].employer
+        location: model.work.jobs[job].location,
+        description: model.work.jobs[job].employer
       });
     }
 
