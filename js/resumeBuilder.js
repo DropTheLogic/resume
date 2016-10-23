@@ -101,19 +101,19 @@ var model = {
 	}
 };
 
-/* Map */
-$('#mapDiv').append(googleMap);
-$('a[href="#mapDiv"]').on("shown.bs.tab", function (e) {
-		'use strict';
-		var center = map.getCenter();
-		google.maps.event.trigger(map, "resize");
-		map.setCenter(center);
-		map.setZoom(10);
-});
-
 var controller = {
 	init: function() {
 		view.init();
+
+		// Make Map
+		$('#mapDiv').append(googleMap);
+		$('a[href="#mapDiv"]').on("shown.bs.tab", function (e) {
+			'use strict';
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+			map.setZoom(10);
+		});
 	},
 
 	/* International name caps */
