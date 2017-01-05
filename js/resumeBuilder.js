@@ -20,11 +20,11 @@ var model = {
 	projects: {
 		"projects" : [
 			{
-				"title" : "Portfolio",
-				"dates" : "2015",
-				"description" : "Designed one-page, responsive portfolio website",
-				"images" : "images/danny-marquez-portfolio-screen.png",
-				"url" : "http://danny-marquez.com/portfolio/"
+				"title" : "The Williamsburger!",
+				"dates" : "2016",
+				"description" : "Created neighborhood map app using web APIs",
+				"images" : "images/danny-marquez-williamsburger-screen.png",
+				"url" : "http://danny-marquez.com/williamsburger/"
 			},
 			{
 				"title" : "JavaScript Game",
@@ -32,6 +32,13 @@ var model = {
 				"description" : "Wrote object-oriented app in JavaScript",
 				"images" : "images/danny-marquez-game-screen.png",
 				"url" : "http://danny-marquez.com/BugRun/"
+			},
+			{
+				"title" : "Portfolio",
+				"dates" : "2015",
+				"description" : "Designed one-page, responsive portfolio website",
+				"images" : "images/danny-marquez-portfolio-screen.png",
+				"url" : "http://danny-marquez.com/portfolio/"
 			}
 		]
 	},
